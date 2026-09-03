@@ -159,3 +159,62 @@ Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Auxili
 [Practica](https://drive.google.com/file/d/1bKooxCwiQiLmgo9GBQYgl90K76v3MW7g/view?usp=drive_link)
 
 [PDF](https://drive.google.com/file/d/1R9Mn7symS9c6GuoPuO3qU_jnMWp2od0a/view?usp=drive_link)
+
+# Clase 4 GitHub
+
+Tu primer push
+>La creación de las SSH es necesario solo una vez por cada computadora. Aquí conocerás cómo conectar a GitHub usando SSH.
+
+
+Luego de crear nuestras llaves SSH podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.
+
+Para esto debes entrar a la Configuración de Llaves SSH en GitHub, crear una nueva llave con el nombre que le quieras dar y el contenido de la llave pública de tu computadora.
+
+Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, solo que, en vez de guardar la URL con HTTPS, vamos a usar la URL con SSH:
+
+```sh
+
+ssh
+
+git remote set-url origin url-ssh-del-repositorio-en-github
+
+Comandos para copiar la llave SSH:
+
+ESTAS SON LAS RUTAS DEL SSH PUBLICO
+-Mac:
+pbcopy < ~/.ssh/id_rsa.pub
+
+Windows (Git Bash):
+
+clip < ~/.ssh/id_rsa.pub
+
+Linux (Ubuntu):
+
+cat ~/.ssh/id_rsa.pub
+
+```
+
+>[!IMPORTANT]
+>:Las buenas costumbres nos enseñan que antes de hacer un push, siempre debemos hacer un pull, un fetch, esto para que si alguien ya hizo algún cambio, no se genere un conflicto.
+
+Invitar a un colaborador
+
+Para invitar a un colaborador debemos ir a GitHub y seleccionar:
+setting -> colaborators -> ingresar contraseña o un F2A de verificación y enviar la invitación escribiendo el nombre de usuario.
+
+
+Del otro lado el usuario invitado solo debe aceptar y listo, ya puede participar del proyecto haciendo commit.
+
+## PORTAFOLIO
+
+
+Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Auxiliar:
+
+Dante Nicolás Martinez
+
+[Introducción](https://drive.google.com/file/d/1Olhji0TDix9hCNSEUDEfKI_TgxWE8Hgp/view?usp=drive_link)
+
+[Practica](https://drive.google.com/file/d/1M-fb5arNqese_kGAczKP1WYDPgWbBxPt/view?usp=drive_link)
+
+[PDF](https://drive.google.com/file/d/1k6QSVmFzFJhK9ykbiw7AWgKX_MXAC9z8/view?usp=drive_link)
+
