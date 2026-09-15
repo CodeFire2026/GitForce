@@ -242,10 +242,15 @@ Sustituye con un identificador semántico que refleje el estado del repositorio 
 Listado de etiquetas
 Para obtener una lista de etiquetas en el repositorio, ejecuta el siguiente comando:
 
-![codigo para añadir tags](https://campus.frsr.utn.edu.ar/moodle/pluginfile.php/153949/mod_page/content/11/tagging%20%281%29-12fce53a-7a10-4eab-9b45-c37111d925f8.jpg)
+```sh
+
+git tag -a v1.0 -m"Product release"
+
+git tag -a ronburgundy -m"Brid killed a guy with a trident."
+
+```
 
 Para crear una etiqueta, ejecuta el siguiente comando:
-
 
 Las etiquetas anotadas almacenan información adicional como la fecha, etiquetador y correo electrónico, y son ideales para publicaciones públicas. Las etiquetas ligeras son más simples y se emplean como “marcadores” de una confirmación específica.
 
