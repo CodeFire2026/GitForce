@@ -306,3 +306,38 @@ Dante Nicolás Martinez
 [Practica](https://drive.google.com/file/d/1w24NMvM0rNEbZNbTEvvQJ8pSqbPwLTf1/view?usp=drive_link)
 
 [PDF](https://drive.google.com/file/d/1qC3_3021ygEk9hczRdzwku0prw3dhQl1/view?usp=drive_link)
+
+# Clase 6 Git Hub
+
+Error con los tags
+Investigación: ¿Qué pasa si por error cargamos un tag con el mismo nombre dos veces?
+
+Respuesta: si se intenta crear dos tag con el mismo nombre saltara un error que git bash te lo muestra
+
+¿Cómo solucionarías este problema o error?
+
+Respuesta: puedes sobreescribir el mismo tag usando la opcion -f
+
+```sh
+# Tag ligero
+git tag -f v1.0
+
+# Tag anotado
+git tag -a -f v1.0 -m "nuevo mensaje"
+```
+Esto actualiza el tag local para que apunte al commit actual
+
+La respuesta debe ser enviada antes de las 23 horas por cada grupo, deben enviar comandos y todo los pasos que harían frente a este conflicto.
+
+## PORTAFOLIO
+
+
+Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Auxiliar:
+
+Dante Nicolás Martinez
+
+[Introducción](https://drive.google.com/file/d/1UhpS8jJ9dU5owgWkvXVGVVryosiEV5bJ/view?usp=drive_link)
+
+[Practica](https://drive.google.com/file/d/1rIdJ-s3o4yvJ5WV1hTzKnn1w59DssFcV/view?usp=drive_link)
+
+[PDF](https://drive.google.com/file/d/1NTGpKOXqoOG7VMwivEXkyY6BY6hUfc7b/view?usp=drive_link)
