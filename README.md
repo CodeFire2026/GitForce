@@ -12,9 +12,10 @@ Luego de crear nuestra cuenta, podemos crear o importar repositorios, crear orga
 
 COMANDOS
 
-```bash
 
-#Import repository, New repository, New organization: significa que es como tu empresa, New project: significa es como un grupo de repositorios que puedes tener dentro de una empresa, New gist: es un pedasito de código que puedes compartir
+> #Import repository, New repository, New organization: significa que es como tu empresa, New project: significa es como un grupo de repositorios que puedes tener dentro de una empresa, New gist: es un pedasito de código que puedes compartir
+
+```bash
 
 New repository #Ponemos el nombre: Prueba-Inicio.Repo, descripción: Así armamos un repositorio. Hay muchas licencias para publicar el código: NO lo hacemos ahora.
 
@@ -97,7 +98,7 @@ Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Auxili
 
 # Clase 3 GitHub
 
-Cambios en GitHub: de master a main
+>Cambios en GitHub: de master a main
 
 El escritor Argentino [Julio Cortázar](https://news.culturacolectiva.com/noticias/mundo/quien-es-julio-cortazar/) afirma que las palabras tienen color y peso. Por otro lado, los sinónimos existen por definición, pero no expresan lo mismo. Feo no es lo mismo que desagradable, ni aromático es lo mismo que oloroso.
 
@@ -118,32 +119,33 @@ Por lo que de aquí en adelante cada vez que me escuches mencionar **“master�
 ¿Cuando es que sigue siendo master y cuando sigue siendo main?
 Cuando se crea un repositorio desde git bash en nuestro ordenador a través de git init, sigue siendo el estandar como master. ¿Qué hacer con esto? Debes cambiar el nombre de la rama master a main con el comando:
 
-````sh
+```sh
 git branch -M main
+```
 
 O cambiando la asignación por default con este otro comando:
 
+```sh
 git config --global init.defaultBranch main
+```
 
 A partir de este comando siempre que ingreses git init será la rama main.
-````
+
 Ahora cuando creamos un repositorio desde la nube, osea desde GitHub, ya verás que la rama principal tiene por default el nombre de main y al clonar a nuestro ordenador seguira teniendo este nombre y no será necesario ningun cambio.
 
 Otro comando que deben saber es:
 
-````sh
-
-gitk
+>gitk
 
 Si no te funciona el comando gitk es posible no lo tengas instalado por defecto.
 
 Para instalar gitk debemos ejecutar los siguientes comandos:
 
+```sh
 sudo apt-get update
 
 sudo apt-get install gitk
-
-````
+```
 
 Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git utilizando el comando gitk. Gitk fue el primer visor gráfico que se desarrolló para ver de manera gráfica el historial de un repositorio de Git.
 
@@ -178,20 +180,24 @@ ssh
 
 git remote set-url origin url-ssh-del-repositorio-en-github
 
+```
+
 Comandos para copiar la llave SSH:
 
 ESTAS SON LAS RUTAS DEL SSH PUBLICO
--Mac:
+
+>-Mac:
+```sh
 pbcopy < ~/.ssh/id_rsa.pub
+```
 
-Windows (Git Bash):
-
+>Windows (Git Bash):
+```sh
 clip < ~/.ssh/id_rsa.pub
-
-Linux (Ubuntu):
-
+```
+>Linux (Ubuntu):
+```sh
 cat ~/.ssh/id_rsa.pub
-
 ```
 
 >[!IMPORTANT]
@@ -228,11 +234,7 @@ En Git, las etiquetas o Git tags tienen un papel importante al asignar versiones
 Creación de etiquetas en Git
 
 ```sh
-
-    ```sh
-    git tag
-
-    ```
+git tag
 
 ```
 
@@ -258,17 +260,18 @@ Las etiquetas anotadas almacenan información adicional como la fecha, etiquetad
 
 git tag
 
+```
+
 Esto mostrará una lista de las etiquetas existentes, como:
 
-v1.0
+>v1.0
 
-v1.1
+>v1.1
 
-v1.2
+>v1.2
 
 Para perfeccionar la lista, puedes utilizar opciones adicionales, como -l con una expresión comodín.
 
-```
 
 Uso compartido de etiquetas
 
@@ -341,3 +344,185 @@ Dante Nicolás Martinez
 [Practica](https://drive.google.com/file/d/1rIdJ-s3o4yvJ5WV1hTzKnn1w59DssFcV/view?usp=drive_link)
 
 [PDF](https://drive.google.com/file/d/1NTGpKOXqoOG7VMwivEXkyY6BY6hUfc7b/view?usp=drive_link)
+
+# Clase 7 Git Hub
+
+En GitHub tenemos cantidad de comandos, hemos presentado muchos hasta ahora, les he solicitado que agreguen los comandos que aun vimos en vivo en el archivo README.md dentro del directorio class-git o dentro de un directorio con el nombre que eligan, esto de manera grupal, hoy en la clase en vivo, voy a estar pidiendo de nuevo este archivo README.md con todas las clases cargadas, en el formato markdown
+
+## PORTAFOLIO
+
+Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Auxiliar:
+
+Dante Nicolás Martinez
+
+[Introducción](https://drive.google.com/file/d/1slhT1go_QvjT2UxWCwtKh059yHcQTfMu/view?usp=drive_link)
+
+[Practica](https://drive.google.com/file/d/1trOr0EnQcvLFy1LAqzGo_-W1M5W9Rtvb/view?usp=drive_link)
+
+[PDF](https://drive.google.com/file/d/1LkqdZ8U1qqjR57v3LDzDLLhXScmIXEUK/view?usp=drive_link)
+
+# Clase 8 Git Hub
+
+Manejo de ramas en GitHub
+
+Es bueno recordar sobre gitk. Si no te funciona el comando gitk es posible no lo tengas instalado por defecto. Esta es una herramienta muy util a la hora de ver graficamente nuestro trabajo y así entender mejor todo el funcionamiento de ramas, merge y todo el flujo en un formato ordenado.
+
+
+Para instalar gitk debemos ejecutar los siguientes comandos:
+
+
+
+```sh
+
+  sudo apt-get update
+
+
+  sudo apt-get install gitk
+
+```
+
+>Repasa: ¿Qué es Git?
+
+Las ramas nos permiten hacer cambios a nuestros archivos sin modificar la versión principal (main). Puedes trabajar con ramas que nunca envías a GitHub, así como pueden haber ramas importantes en GitHub que nunca usas en el repositorio local. Lo crucial es que aprendas a manejarlas para trabajar profesionalmente.
+
+Si, estando en otra rama, modificamos los archivos y hacemos commit, tanto el historial(git log) como los archivos serán afectados. La ventaja que tiene usar ramas es que las modificaciones solo afectarán a esa rama en particular. Si luego de “guardar” los archivos(usando commit) nos movemos a otra rama (git checkout otraRama) veremos como las modificaciones de la rama pasada no aparecen en la otraRama.
+
+Comandos para manejo de ramas en GitHub
+Crear una rama:
+
+
+```sh
+git branch branchName #Crear una rama
+git checkout -b branchName #También crea una rama
+git checkout branchName #Movernos a otra rama 
+git push origin branchName #Publicar una rama local al repositorio remoto
+```
+
+Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git utilizando el comando gitk. Gitk fue el primer visor gráfico que se desarrolló para ver de manera gráfica el historial de un repositorio de Git.
+
+
+## PORTAFOLIO
+
+
+Ya hemos terminado, pronto estará disponible el formulario de entrega
+
+# Clase 9 Git Hub
+
+>Configurar múltiples colaboradores en un repositorio de GitHub
+
+Por defecto, cualquier persona puede clonar o descargar tu proyecto desde GitHub, pero no pueden crear commits, ni ramas. Esto quiere decir que pueden copiar tu proyecto pero no colaborar con él, si este es publico, de otra manera, osea, si es privado es necesario que realmente estes haciendo una invitación, sino no lo van a poder ver. Existen varias formas de solucionar esto para poder aceptar contribuciones. Una de ellas es añadir a cada persona de nuestro equipo como colaborador de nuestro repositorio.
+
+
+Cómo agregar colaboradores en Github
+Solo debemos entrar a la configuración de colaboradores de nuestro proyecto. Se encuentra en:
+
+Repositorio > Settings > Collaborators
+Ahí, debemos añadir el email o username de los nuevos colaboradores.
+
+Si, como colaborador, agregaste erróneamente el mensaje del commit, lo puedes cambiar de la siguiente manera:
+
+Hacer un commit con el nuevo mensaje que queremos, esto nos abre el editor de texto de la terminal:
+
+```sh
+
+git commit —amend #Corregimos el mensaje
+git pull origin main #Traer el repositorio remoto
+git push --set-upstream origin main #Ejecutar el cambio, el error arreglado
+
+```
+
+Comienzo del colaborador
+
+```sh
+
+cd Documentos #Abre git bash
+
+mkdir class-git #Crea la carpeta o directorio de trabajo
+
+ls -al #Revisa lo que va haciendo, los archivos o directorios que tiene
+
+# 1. No debe hacer un git init, debe buscar el repositorio en el cual esta invitado a participar, por supuesto en GitHub.
+
+# 2. Pasa a clonar desde HTTPS, copiar la url, esto es porque no se arranca el proyecto desde cero, se esta uniendo otro colaborador.
+
+# 3. En git bash ponemos el siguiente comando.
+
+git clone url-copiada-github #Esto hace que clonemos el repositorio
+
+# 4. No pide ni usuario ni contraseña si el repositorio es publico.
+
+code . #Abre VSC y comienza con cambios, o abre el siguiente comando para hacer modificaciones
+
+vim historia.txt #Vamos a escribir: Aquí esta un nuevo colaborador
+
+vim escribimos el mensaje del commit #Esto en Ubuntu
+
+ctrl + x
+
+s #Para un si 
+
+enter #Terminado el mensaje del commit
+
+vim escribimos el mensaje del commit #Esto en git bash window
+
+esc #Presionamos escaner luego de terminar de escribir
+
+:wq! #Para salir del editor vim en window
+
+git status
+
+git commit -am "Mi primer commit, estoy muy emocionado!!!"
+
+git pull origin main
+
+git fetch
+
+gti branch #Para ver las ramas que se trajo, no se trae sino solo main, si hay mas debes crearlas local
+
+git log #Para ver toda las historia
+
+git log --graph #Vemos el grafico de las diferentes ramas y del commit que acabamos de hacer que esta en el main, Git es una base de datos de toda las historia de todo lo que se ha hecho
+
+git push origin main #Va a pedir un email que será el del colaborador, su contraseña.
+
+# 5. Nos trae un denegado, ¿Por qué? Porque en el proceso de abordaje el jefe no le dio acceso: el dueño del repositorio no le agregó dandole acceso.
+
+# 6. Ir a settings del repositorio, veremos la opsión Collaborators, agregamos el correo o nombre de usuario: el colaborador debe tener un email publico y visible o de otra manera debera ser con el nombre de usuario publico: ingresar el username y debe ir como colaborador.
+
+# 7. Se puede enviar un email con la url, pero ya GitHub envia una notificación al usuario de invitado, es una cosa que debemos empezar a consultar y revisar.
+
+# 8. El colaborador debe aceptar la invitación, una vez hecho eso ya tendrá total acceso para hacer push al repositorio.
+
+git pull origin main
+
+git push origin main #Colocar nombre de usuario y contraseña, listo
+# 9. El dueño del repositorio no ve los cambios, ¿Qué hacer?
+
+git pull origin main
+
+git fetch
+
+git log --stat #Se verá claro que el colaborador ingreso su primer commit
+
+# 10. A partir de ahora el dueño del repositorio y el colaborador deberán repartir el trabajo, esto se hace con distintas ramas de trabajo: el dueño trabajará desde la rama header y el colaborador desde la rama footer, al final cuando se termine, se hara un merge para terminar el proyecto.
+
+```
+
+# Clase 10 Git Hub
+
+Flujo de trabajo profesional
+
+>Haciendo merge de ramas de desarrollo a main
+
+
+Para poder desarrollar software de manera óptima y ordenada, necesitamos tener un flujo de trabajo profesional, que nos permita trabajar en conjunto sin interrumpir el trabajo de otros desarrolladores.
+
+Una buena práctica de flujo de trabajo sería la siguiente:
+
+Crear ramas
+Asignar una rama a cada programador
+El programador baja el repositorio con git pull origin master
+El programador cambia de rama
+El programador trabaja en esa rama y hace commits
+El programador sube su trabajo con git push origin #nombre_rama
+El encargado de organizar el proyecto baja, revisa y unifica todos los cambios
