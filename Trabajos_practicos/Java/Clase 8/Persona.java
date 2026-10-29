@@ -16,3 +16,4 @@ Persona personal2 = new Persona("Maria", 85.000, true);
         System.out.println("Nombre modificado: " + personal2.getNombre());
         System.out.println("Sueldo modificado: " + personal2.getSueldo());
         System.out.println("Booleano modificado: " + personal2.isEliminado());
+        
