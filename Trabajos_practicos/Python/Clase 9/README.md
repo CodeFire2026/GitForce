@@ -1,1 +1,0 @@
-en la clase 9 de python, el profesor solo dio practicas, no hay ejercicios a entregar.
