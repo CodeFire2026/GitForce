@@ -1,0 +1,1 @@
+en la clase 1 no hay tarea, el profe solo mostro codigos en vivo.
