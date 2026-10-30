@@ -1,7 +1,3 @@
-# GitForce
-
-> Integrantes: Matias, Amir, Ezequiel, Axel, Gaston y Lucas
-
 # Clase 1 GitHub
 
 USO DE GITHUB
